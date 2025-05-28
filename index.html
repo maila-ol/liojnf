@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nunes, estar com você me fez querer ser alguém melhor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #4e003b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #c0392b;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    .heart {
+      font-size: 2em;
+      animation: pulse 1.5s infinite;
+      color: #e74c3c;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Feliz Dia dos Namorados(parte 1) 💘</h1>
+    <div class="heart">❤️</div>
+    <p>Nunes ou melhor dizendo amor, eu li vários livros de romance(dark romance), e o mais engraçado que você veio do jeito que eu queria um cara com problemas familiares, inteligente, engraçado, sarcastico, o personagem perfeito de qualquer livro, mas o grande spoiler é que nenhum autor(a) conseguiu descrever alguém que seja tão perfeito como você.</p>
+    <p>Obrigada por ser meu porto seguro.</p>
+    <button onclick="mostrarMensagem()">Clique para uma surpresa ✨</button>
+    <p id="surpresa" style="display:none; margin-top: 20px;">DIA 12 VC IRÁ RECEBER A PARTE 2 DO SEU PRESENTE ESPERE E VERÁ.! 💖</p>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("surpresa").style.display = "block";
+    }
+  </script>
+</body>
+</html>
